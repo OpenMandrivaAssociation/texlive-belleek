@@ -1,3 +1,9 @@
+# revision 18651
+# category Package
+# catalog-ctan /fonts/belleek/belleek.zip
+# catalog-date 2008-11-30 15:59:19 +0100
+# catalog-license pd
+# catalog-version undef
 Name:		texlive-belleek
 Version:	20081130
 Release:	1
@@ -49,6 +55,7 @@ currently available commercial bundle).
 %doc %{_texmfdistdir}/source/latex/belleek/my1mtt.fd
 %doc %{_texmfdistdir}/source/latex/belleek/my2mtt.fd
 %doc %{_texmfdistdir}/source/latex/belleek/my3mtt.fd
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -59,3 +66,5 @@ currently available commercial bundle).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
