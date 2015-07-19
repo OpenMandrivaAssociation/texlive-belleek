@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-belleek
 Version:	20081130
-Release:	9
+Release:	10
 Summary:	Free replacement for basic MathTime fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/belleek/belleek.zip
