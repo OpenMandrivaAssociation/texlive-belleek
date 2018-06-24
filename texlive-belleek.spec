@@ -5,7 +5,7 @@
 # catalog-license pd
 # catalog-version undef
 Name:		texlive-belleek
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Free replacement for basic MathTime fonts
 Group:		Publishing
