@@ -5,8 +5,8 @@
 # catalog-license pd
 # catalog-version undef
 Name:		texlive-belleek
-Version:	20180303
-Release:	2
+Version:	20190228
+Release:	1
 Summary:	Free replacement for basic MathTime fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/belleek/belleek.zip
