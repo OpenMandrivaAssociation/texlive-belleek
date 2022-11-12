@@ -1,19 +1,13 @@
-# revision 18651
-# category Package
-# catalog-ctan /fonts/belleek/belleek.zip
-# catalog-date 2008-11-30 15:59:19 +0100
-# catalog-license pd
-# catalog-version undef
 Name:		texlive-belleek
-Version:	20190228
+Version:	18651
 Release:	1
 Summary:	Free replacement for basic MathTime fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/belleek/belleek.zip
 License:	PD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/belleek.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/belleek.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/belleek.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/belleek.r18651.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/belleek.doc.r18651.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/belleek.source.r18651.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ MathTime-Plus or MathTime Professional (the last being the only
 currently available commercial bundle).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -49,25 +43,11 @@ currently available commercial bundle).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20081130-2
-+ Revision: 749564
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20081130-1
-+ Revision: 717905
-- texlive-belleek
-- texlive-belleek
-- texlive-belleek
-- texlive-belleek
-- texlive-belleek
-
