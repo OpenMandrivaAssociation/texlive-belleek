@@ -3,7 +3,7 @@ Version:	66115
 Release:	1
 Summary:	Free replacement for basic MathTime fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/belleek/belleek.zip
+URL:		https://www.ctan.org/tex-archive/fonts/belleek/belleek.zip
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/belleek.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/belleek.doc.r%{version}.tar.xz
